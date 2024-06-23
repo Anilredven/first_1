@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Card</title>
+    <style>
+        *{
+            background-color: darkkhaki;
+        }
+    
+img{
+    position:fixed;
+    margin-left: 40%;
+    margin-top:150px;
+}
+.card img{
+    width: 320px;
+    height:460px;
+    border:3px solid whitesmoke;
+    border-radius:5px;
+    box-shadow: 5px 5px rgb(43, 40, 40);
+    text-align: center;
+    perspective: 800px;
+    transform: 0.5e;
+
+}
+.front,  .back{
+    backface-visibility: hidden;
+}
+
+.front{
+    transform: rotateY(0deg);
+}
+.back{
+    transform: rotateY(180deg);
+}
+.card:hover .front{
+    transform:rotateY(-180deg)
+}
+.card:hover .back{
+    transform:rotateY(0deg)
+}
+.svg{
+    float:left;}
+.svg2{
+    float:right;
+
+}
+
+h1{
+    margin:0px 120px;
+
+   
+}
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="front">
+            <img src="prav.JPG" alt="prav" style="text-align: center;" >
+
+        </div>
+        <div class="back">
+            <img src="pr&ani.jpg" alt="prav&ani" style="text-align: center;" >
+
+        </div>
+               
+   </div>
+   <div class="svg">
+    <svg width="100px" height="100px">
+       <circle cx="50" cy="50" r="40" stroke="white" stroke-width="3" fill="blue"> 
+    </svg> <h1>Press here</h1> 
+    
+   </div>
+   <div class="svg2">
+    <svg width="100px" height="100px">
+       <circle cx="50" cy="50" r="40" stroke="white" stroke-width="3" fill="red"> 
+    </svg> <h1>Press here</h1> 
+    
+   </div>
+</body>
+</html>
